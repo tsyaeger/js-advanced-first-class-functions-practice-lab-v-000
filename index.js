@@ -1,6 +1,6 @@
 // Code your solution in this file!
 
-function logDriverNames
+const logDriverNames = function (logDriverNames)
 
 describe('logDriverNames()', function () {
     let spy;
