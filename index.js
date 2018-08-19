@@ -1,1 +1,29 @@
 // Code your solution in this file!
+
+function logDriverNames
+
+describe('logDriverNames()', function () {
+    let spy;
+
+    beforeEach(function () {
+      spy = sinon.spy(console, 'log');
+    });
+
+    afterEach(function () {
+      spy.restore();
+    });
+
+    it('logs the name of each driver', function () {
+      logDriverNames(drivers);
+
+      expect(spy.calledWithExactly('Bobby')).to.be.true;
+
+      expect(spy.calledWithExactly('Sally')).to.be.true;
+
+      expect(spy.calledWithExactly('Sammy')).to.be.true;
+
+      expect(spy.calledWithExactly('Annette')).to.be.true;
+
+      expect(spy.calledWithExactly('Bobby')).to.be.true;
+    });
+  });
