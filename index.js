@@ -1,6 +1,10 @@
 // Code your solution in this file!
 
-const logDriverNames = function (logDriverNames)
+const logDriverNames = function (drivers) {
+  drivers.forEach(function(driver)) {
+    console.log(driver.name)
+  }
+}
 
 describe('logDriverNames()', function () {
     let spy;
