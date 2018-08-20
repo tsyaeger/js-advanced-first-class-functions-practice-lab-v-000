@@ -14,18 +14,10 @@ const logDriversByHometown = function (drivers, hometown) {
   })
 }
 
-const driversByRevenue = function (drivers) {
-  
+const driversByRevenue =  function sortNumber(a,b) {
+    return a - b;
 }
 
-
-describe('driversByRevenue()', function () {
-    it('uses the sort() method to return a new array of drivers ordered by revenue (lowest to highest)', function () {
-      expect(driversByRevenue(drivers)[0].name).to.eql('Sally');
-
-      expect(driversByRevenue(drivers)[drivers.length - 1].name).to.eql('Annette');
-    });
-  });
 
 
 
